@@ -42,6 +42,10 @@
   "author": "Parshuram Biradar <parshuram@blitzcodesys.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blitzcode/expo-store-version-checker.git"
+    "url": "https://github.com/parshurambiradar/expo-store-version-checker.git"
+  },
+  "homepage": "https://github.com/parshurambiradar/expo-store-version-checker",
+  "bugs": {
+    "url": "https://github.com/parshurambiradar/expo-store-version-checker/issues"
   }
 }
