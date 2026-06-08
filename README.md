@@ -35,7 +35,7 @@ npm install expo-constants react react-native
 ## Basic Usage
 
 ```tsx
-import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
+import { useForceStoreUpdate } from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
   const { ExpoStoreVersionChecker } = useForceStoreUpdate({
@@ -56,7 +56,7 @@ export default function App() {
 ## Customizing the Built-in Modal
 
 ```tsx
-import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
+import { useForceStoreUpdate } from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
   const { ExpoStoreVersionChecker } = useForceStoreUpdate({
@@ -106,7 +106,7 @@ export default function App() {
 If you prefer complete control over the UI, disable the built-in modal.
 
 ```tsx
-import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
+import { useForceStoreUpdate } from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
   const { needsUpdate, currentVersion, latestVersion, openStore } =
@@ -181,7 +181,7 @@ interface UseForceStoreUpdateOptions {
 ## Complete Example
 
 ```tsx
-import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
+import { useForceStoreUpdate } from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
   const { ExpoStoreVersionChecker } = useForceStoreUpdate({
