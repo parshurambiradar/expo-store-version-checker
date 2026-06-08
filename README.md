@@ -38,13 +38,13 @@ npm install expo-constants react react-native
 import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
-  const { UpdateModal } = useForceStoreUpdate({
+  const { ExpoStoreVersionChecker } = useForceStoreUpdate({
     iosAppId: "YOUR_APP_STORE_ID",
   });
 
   return (
     <>
-      <UpdateModal />
+      <ExpoStoreVersionChecker />
       {/* Your App */}
     </>
   );
@@ -59,7 +59,7 @@ export default function App() {
 import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
-  const { UpdateModal } = useForceStoreUpdate({
+  const { ExpoStoreVersionChecker } = useForceStoreUpdate({
     iosAppId: "YOUR_APP_STORE_ID",
 
     title: "Update Required",
@@ -93,7 +93,7 @@ export default function App() {
 
   return (
     <>
-      <UpdateModal />
+      <ExpoStoreVersionChecker />
     </>
   );
 }
@@ -133,17 +133,22 @@ export default function App() {
 ## Hook Return Values
 
 ```tsx
-const { needsUpdate, currentVersion, latestVersion, openStore, UpdateModal } =
-  useForceStoreUpdate(options);
+const {
+  needsUpdate,
+  currentVersion,
+  latestVersion,
+  openStore,
+  ExpoStoreVersionChecker,
+} = useForceStoreUpdate(options);
 ```
 
-| Property       | Type            | Description                             |
-| -------------- | --------------- | --------------------------------------- | ------------------------------------- |
-| needsUpdate    | boolean         | Indicates whether an update is required |
-| currentVersion | string          | null                                    | Installed app version                 |
-| latestVersion  | string          | null                                    | Latest version available in the store |
-| openStore      | () => void      | Opens the App Store or Play Store       |
-| UpdateModal    | React Component | Built-in update modal component         |
+| Property                | Type            | Description                             |
+| ----------------------- | --------------- | --------------------------------------- | ------------------------------------- |
+| needsUpdate             | boolean         | Indicates whether an update is required |
+| currentVersion          | string          | null                                    | Installed app version                 |
+| latestVersion           | string          | null                                    | Latest version available in the store |
+| openStore               | () => void      | Opens the App Store or Play Store       |
+| ExpoStoreVersionChecker | React Component | Built-in update modal component         |
 
 ---
 
@@ -179,7 +184,7 @@ interface UseForceStoreUpdateOptions {
 import useForceStoreUpdate from "@blitzcode/expo-store-version-checker";
 
 export default function App() {
-  const { UpdateModal } = useForceStoreUpdate({
+  const { ExpoStoreVersionChecker } = useForceStoreUpdate({
     iosAppId: "YOUR_APP_STORE_ID",
 
     title: "Update Required",
@@ -192,7 +197,7 @@ export default function App() {
 
   return (
     <>
-      <UpdateModal />
+      <ExpoStoreVersionChecker />
       {/* App Content */}
     </>
   );
