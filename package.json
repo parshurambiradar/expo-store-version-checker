@@ -1,6 +1,6 @@
 {
   "name": "@blitzcode/expo-store-version-checker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Expo package to check Play Store and App Store versions and display update modal",
   "type": "module",
   "main": "./dist/index.js",
