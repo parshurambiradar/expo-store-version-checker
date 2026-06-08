@@ -75,13 +75,13 @@ export default function useForceStoreUpdate(
         : `market://details?id=${androidPackageName}`,
     );
   };
-  const UpdateModal = () => {
+  const ExpoStoreVersionChecker = () => {
     if (disableDefaultModal) return null;
 
     if (!needsUpdate) return null;
 
     return (
-      <Modal visible transparent>
+      <Modal visible transparent animationType="fade">
         <View
           style={[
             {
@@ -173,5 +173,11 @@ export default function useForceStoreUpdate(
       </Modal>
     );
   };
-  return { needsUpdate, UpdateModal, openStore, currentVersion, latestVersion };
+  return {
+    needsUpdate,
+    ExpoStoreVersionChecker,
+    openStore,
+    currentVersion,
+    latestVersion,
+  };
 }

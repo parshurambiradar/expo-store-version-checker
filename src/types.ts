@@ -21,5 +21,5 @@ export interface UseForceStoreUpdateReturn {
   currentVersion: string | null;
   latestVersion: string | null;
   openStore: () => void;
-  UpdateModal: ComponentType;
+  ExpoStoreVersionChecker: ComponentType;
 }
